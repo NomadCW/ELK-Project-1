@@ -21,6 +21,9 @@ This document contains the following details:
 
 ### Description of the Topology
 
+- ADD TOPOLOGY SCREENSHOT-
+
+-
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
