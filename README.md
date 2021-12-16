@@ -22,34 +22,39 @@ This document contains the following details:
 ### Description of the Topology
 
 ![Screen Shot 2021-12-15 at 3 47 29 PM](https://user-images.githubusercontent.com/89741089/146270178-f25e51bc-1bcc-4625-90ee-9cc8dc3c6451.png)
--
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that no single server has too much demand. This is done by spreading the workload across multiple servers. 
+- The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
--Load balancing has an important role in regards to security as it helps defend against (DDoS) attacks, protects applications from emerging threats, authenticates user access, and helps simplify PCI compliance. 
-_For added security a jump box has been added to prevent the VM's exposure to the public as well as minimize open ports.
+- Load balancing ensures that no single server has too much demand. This is done by spreading the workload across multiple servers. 
+
+- What aspect of security do load balancers protect?
+  Answer: Load balancing has an important role in regards to security as it helps defend against (DDoS) attacks, protects applications from emerging threats, authenticates user access, and helps simplify PCI compliance. 
+- What is the advantage of a jump box?
+  Answer: Added security. A jump box has been added as an access control to prevent the VM's exposure to the public as well as minimize open ports.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
-- Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
-
-- Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
+- What does Filebeat watch for?
+  Answer: Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+- What does Metricbeat record?
+  Answer: Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
 
-| Name        | Function | IP Address | Operating System |
-|-------------|----------|------------|------------------|
-| Jump Box    | Gateway  | 10.0.0.4   | Linux            |
-| Web-1       | VM       | 10.0.0.5   | Linux            |
-| Web-2       | VM       | 10.0.0.6   | Linux            |
-| ELK-SERVER  | VM       | 10.1.0.4   | Linux            |
+| Name          | Function       | IP Address               | Operating System |
+|---------------|----------------|--------------------------|------------------|
+| Jump Box      | Gateway        | 10.0.0.4 /52.255.170.193 | Linux            |
+| Web-1         | Web Server     | 10.0.0.5                 | Linux            |
+| Web-2         | Web Server     | 10.0.0.6                 | Linux            |
+| ELK-SERVER    | ELK Server     | 10.1.0.4                 | Linux            |
+| Load Balancer | Load Balancer  | Static                   | Linux            |
+| Workstation   | Access Control | External                 | Linux            |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box VM can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 10.0.0.4
+- 52.255.170.193
 
 Machines within the network can only be accessed by the Jump Box VM.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
