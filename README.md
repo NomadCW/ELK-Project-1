@@ -11,53 +11,54 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - _TODO: Enter the playbook file._
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
-  - Machines Being Monitored
+  - Virtual Machines Being Monitored
 - How to Use the Ansible Build
 
 
 ### Description of the Topology
 
-- ADD TOPOLOGY SCREENSHOT-
-
+![Screen Shot 2021-12-15 at 3 47 29 PM](https://user-images.githubusercontent.com/89741089/146270178-f25e51bc-1bcc-4625-90ee-9cc8dc3c6451.png)
 -
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that no single server has too much demand. This is done by spreading the workload across multiple servers. 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+-Load balancing has an important role in regards to security as it helps defend against (DDoS) attacks, protects applications from emerging threats, authenticates user access, and helps simplify PCI compliance. 
+_For added security a jump box has been added to prevent the VM's exposure to the public as well as minimize open ports.
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
+- Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+
+- Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name        | Function | IP Address | Operating System |
+|-------------|----------|------------|------------------|
+| Jump Box    | Gateway  | 10.0.0.4   | Linux            |
+| Web-1       | VM       | 10.0.0.5   | Linux            |
+| Web-2       | VM       | 10.0.0.6   | Linux            |
+| ELK-SERVER  | VM       | 10.1.0.4   | Linux            |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump Box VM can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- 10.0.0.4
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by the Jump Box VM.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
+| Jump Box |     No              | 10.0.0.4             |
 |          |                     |                      |
 |          |                     |                      |
 
@@ -96,6 +97,6 @@ SSH into the control node and follow the steps below:
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Navigate to http://[your.VM.IP]:5601/app/kibana. Use the public IP address of the ELK server .... URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
