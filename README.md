@@ -4,7 +4,7 @@ Azure Network Setup
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+![Azure VN CW](https://user-images.githubusercontent.com/89741089/146595306-ea3021a0-1892-4819-9d31-9882d3a21437.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the config and yml files may be used to install only certain pieces of it, such as Filebeat.
 
