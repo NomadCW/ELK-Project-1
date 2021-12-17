@@ -42,7 +42,7 @@ The configuration details of each machine may be found below.
 
 | Name          | Function       | IP Address               | Operating System |
 |---------------|----------------|--------------------------|------------------|
-| Jump Box      | Gateway        | 10.0.0.4 /52.255.170.193 | Linux            |
+| Jump-Box      | Gateway        | 10.0.0.4 /52.255.170.193 | Linux            |
 | Web-1         | Web Server     | 10.0.0.5                 | Linux            |
 | Web-2         | Web Server     | 10.0.0.6                 | Linux            |
 | ELK-SERVER    | ELK Server     | 10.1.0.4                 | Linux            |
@@ -53,26 +53,31 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jump Box VM can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 52.255.170.193
+Only the ELK Server can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- Workstation Public IP through TCP 5601
 
-Machines within the network can only be accessed by the Jump Box VM.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by the Jump Box VM. Which machine did you allow to access your ELK VM? What was its IP address?
+- Jump-Box-Provisioner IP : 10.0.0.4 via SSH port 22
+- Workstation Public IP via port TCP 5601
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box |     No              | 10.0.0.4             |
-|          |                     |                      |
-|          |                     |                      |
+| Name          | Publicly Accessible | Allowed IP Addresses              |
+|---------------|---------------------|-----------------------------------|
+| Jump-Box      |     No              | Workstation Public IP via SSH 22  |
+| Web-1         |     No              | 10.0.0.4 via SSH 22               |
+| Web-2         |     No              | 10.0.0.4 via SSH 22               | 
+| ELK-SERVER    |     No              | 10.1.0.4 via SSH 22               | 
+| Load Balancer |     No              | Workstation Public IP via HTTP 80 | 
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because Ansible allows a quick and efficient way to deploy apps. The ease of use is due to the ability to write a playbook allowing you to list required tasks without needing to write custom code. 
 
 The playbook implements the following tasks:
+
+
+
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - ...
 - ...
