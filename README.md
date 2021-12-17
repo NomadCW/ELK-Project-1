@@ -104,6 +104,10 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Setup the ELK VM
+- install-elk.yml---
+- 
+      
+- Run the playbook using this command : ansible-playbook install-elk.yml
 - Copy the _____ file to _____.
 - Update the _____ file to include...
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
