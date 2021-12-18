@@ -132,7 +132,7 @@ Update the hosts file to include ElK server
 - Run the playbook using this command : ansible-playbook install-elk.yml
 
 - To verify your ELK Server can load go to http://[your.VM.IP]:5601/app/kibana using the ELK Server IP to verify.
--If you see the picture below you have verified your ELK is up and running. 
+- If you see the picture below you have verified your ELK is up and running. 
 
 ![ELK Running](https://user-images.githubusercontent.com/89741089/146655049-749160ef-d0ef-47c4-afcf-4e433be709ad.png)
 
