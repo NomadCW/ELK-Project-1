@@ -125,7 +125,7 @@ Update the hosts file to include ElK server
 ![Hosts](https://user-images.githubusercontent.com/89741089/146655377-9028534b-2e98-4b72-9def-a322f37465df.png)
 
 - Create a new playbook: touch /etc/ansible/install-elk.yml
-- Next: nano install-elk.ym and copy and paste information from file below then save
+- Next: nano install-elk.yml and copy and paste information from file below then save
 
 - [Install Elk.yml](https://github.com/NomadCW/ELK-Project-1/blob/main/Files/ELK/install-elk.yml)
 - (NOTE: be sure to SSH into you ELK machine to verify your connected before running the playbook.)
@@ -136,4 +136,6 @@ Update the hosts file to include ElK server
 
 ![ELK Running](https://user-images.githubusercontent.com/89741089/146655049-749160ef-d0ef-47c4-afcf-4e433be709ad.png)
 
-If you see the picture above your ELK is up and running. 
+### More Information
+- For more information on Ansible and and how it works with Azure visit: [Ansible](https://www.ansible.com/integrations/cloud/microsoft-azure)
+- For more information on the ELK Stack visit: [ELK](https://www.elastic.co/elastic-stack/)
