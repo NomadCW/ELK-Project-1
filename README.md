@@ -119,10 +119,11 @@ SSH into the control node and follow the steps below:
 Update the hosts file to include ElK server
 
 - Navigate to /etc/ansible/hosts and update file below:  
--[Hosts file](https://github.com/NomadCW/ELK-Project-1/blob/main/Files/Ansible/hosts)
+  [Hosts file](https://github.com/NomadCW/ELK-Project-1/blob/main/Files/Ansible/hosts)
 - This is how the file should look:
 
-![Hosts](https://user-images.githubusercontent.com/89741089/146655377-9028534b-2e98-4b72-9def-a322f37465df.png)
+ ![Hosts](https://user-images.githubusercontent.com/89741089/146658502-0692dc35-5c6b-47d7-b276-0b57ebe23e1a.png)
+
 
 - Create a new playbook: touch /etc/ansible/install-elk.yml
 - Next: nano install-elk.yml and copy and paste information from file below then save
