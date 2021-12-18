@@ -81,13 +81,20 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because Ansible allows a quick and efficient way to deploy apps. The ease of use is due to the ability to write a playbook allowing you to list required tasks without needing to write custom code. 
 
-The playbook implements the following tasks:
+(NOTE: be sure to SSH into you ELK machine to verify your connected before running the playbook.)
 
+- The playbook implements the following tasks:
+- Ansible playbook can specify a different group of machines as well as a different remote user:
+![Playbook 1](https://user-images.githubusercontent.com/89741089/146653583-8c7096e3-0351-4765-9fca-edbed9537bac.png)
+- To increase the system memory:
 
+![Playbook 2](https://user-images.githubusercontent.com/89741089/146653593-a968f4b4-b9df-4f3a-911a-659ee2ac0562.png)
+- Installation of services:
 
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+![Playbook 3](https://user-images.githubusercontent.com/89741089/146653855-1cde9c40-1017-4f84-8555-dfaab1a64194.png)
+- Ports the container should start with:
+
+![Playbook 4](https://user-images.githubusercontent.com/89741089/146653872-c55a4c58-e5a2-43e0-92d0-5af0202ed90b.png)
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
