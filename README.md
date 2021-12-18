@@ -10,6 +10,12 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 - [Ansible.cfg](https://github.com/NomadCW/ELK-Project-1/blob/main/Files/Ansible/ansible.cfg)
 - [Filebeat.yml](https://github.com/NomadCW/ELK-Project-1/blob/main/Files/Ansible/filebeat.yml)
+- [Hosts file](https://github.com/NomadCW/ELK-Project-1/blob/main/Files/Ansible/hosts)
+- [Metricbeat.yml](https://github.com/NomadCW/ELK-Project-1/blob/main/Files/Ansible/metricbeat.yml)
+- [My Playbook.yml](https://github.com/NomadCW/ELK-Project-1/blob/main/Files/Ansible/my-playbook.yml)
+- [Filebeat Playbook.yml](https://github.com/NomadCW/ELK-Project-1/blob/main/Files/ELK/filebeat-playbook.yml)
+- [Metricbeat Playbook.yml](https://github.com/NomadCW/ELK-Project-1/blob/main/Files/ELK/metricbeat-playbook.yml)
+- [Install Elk.yml](https://github.com/NomadCW/ELK-Project-1/blob/main/Files/ELK/install-elk.yml)
 
 This document contains the following details:
 - Description of the Topology
