@@ -136,6 +136,7 @@ Update the hosts file to include ElK server
 - If you see the picture below you have verified your ELK is up and running. 
 
 ![ELK Running](https://user-images.githubusercontent.com/89741089/146655049-749160ef-d0ef-47c4-afcf-4e433be709ad.png)
+-Good Job! Your ELK installation is complete.
 
 ### More Information
 - For more information on Ansible and and how it works with Azure visit: [Ansible](https://www.ansible.com/integrations/cloud/microsoft-azure)
