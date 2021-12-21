@@ -64,18 +64,18 @@ Only the ELK Server can accept connections from the Internet. Access to this mac
 - Workstation Public IP through TCP 5601
 
 Machines within the network can only be accessed by the Jump Box VM. Which machine did you allow to access your ELK VM? What was its IP address?
-- Jump-Box-Provisioner IP : 10.0.0.4 via SSH port 22
-- Workstation Public IP via port TCP 5601
+- Jump-Box-Provisioner IP : 10.0.0.4 (SSH port 22)
+- Workstation Public IP to ELK (TCP port 5601)
 
 A summary of the access policies in place can be found in the table below.
 
 | Name          | Publicly Accessible | Allowed IP Addresses              |
 |---------------|---------------------|-----------------------------------|
-| Jump-Box      |     No              | Workstation Public IP via SSH 22  |
+| Jump-Box      |     No              | Workstation Public IP (SSH 22)    |
 | Web-1         |     No              | 10.0.0.4 via SSH 22               |
 | Web-2         |     No              | 10.0.0.4 via SSH 22               | 
 | ELK-SERVER    |     No              | 10.1.0.4 via SSH 22               | 
-| Load Balancer |     No              | Workstation Public IP via HTTP 80 | 
+| Load Balancer |     No              | Workstation Public IP (HTTP 80)   | 
 
 ### Elk Configuration
 
@@ -108,8 +108,8 @@ We have installed the following Beats on these machines:
  - ELK Server, Web-1, Web-2
 
 These Beats allow us to collect the following information from each machine:
-- FileBeat: data from the file system.
-- MetricBeat: collects machine metrics. 
+- FileBeat: data from the file system. (monitors specified files/log events and forwards for indexing)
+- MetricBeat: collects machine metrics. (collects services and operating system metrics and ships them to a designated location)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
