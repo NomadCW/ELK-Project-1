@@ -72,9 +72,9 @@ A summary of the access policies in place can be found in the table below.
 | Name          | Publicly Accessible | Allowed IP Addresses              |
 |---------------|---------------------|-----------------------------------|
 | Jump-Box      |     No              | Workstation Public IP (SSH 22)    |
-| Web-1         |     No              | 10.0.0.4 via SSH 22               |
-| Web-2         |     No              | 10.0.0.4 via SSH 22               | 
-| ELK-SERVER    |     No              | 10.1.0.4 via SSH 22               | 
+| Web-1         |     No              | 10.0.0.4 (SSH 22)                 |
+| Web-2         |     No              | 10.0.0.4 (SSH 22)                 | 
+| ELK-SERVER    |     No              | 10.1.0.4 (SSH 22)                 | 
 | Load Balancer |     No              | Workstation Public IP (HTTP 80)   | 
 
 ### Elk Configuration
