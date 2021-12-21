@@ -53,7 +53,7 @@ The configuration details of each machine may be found below.
 | Web-1         | Web Server     | 10.0.0.5                 | Linux            |
 | Web-2         | Web Server     | 10.0.0.6                 | Linux            |
 | ELK-SERVER    | ELK Server     | 10.1.0.4                 | Linux            |
-| Load Balancer | Load Balancer  | Static                   | Linux            |
+| Load Balancer | Load Balancer  | 20.119.53.18             | Linux            |
 | Workstation   | Access Control | External                 | Linux            |
 
 ### Access Policies
