@@ -52,7 +52,7 @@ The configuration details of each machine may be found below.
 | Jump-Box      | Gateway        | 10.0.0.4 /52.255.170.193 | Linux            |
 | Web-1         | Web Server     | 10.0.0.5                 | Linux            |
 | Web-2         | Web Server     | 10.0.0.6                 | Linux            |
-| ELK-SERVER    | ELK Server     | 10.1.0.4                 | Linux            |
+| ELK-SERVER    | ELK-SERVER     | 10.1.0.4                 | Linux            |
 | Load Balancer | Load Balancer  | 20.119.53.18             | Linux            |
 | Workstation   | Access Control | External (Public IP)     | Linux            |
 
